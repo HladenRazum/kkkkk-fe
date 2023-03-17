@@ -15,6 +15,7 @@
    --primary-text: var(--accents-8);
    --primary-bg: var(--accents-1);
    --paper-bg: var(--white);
+   --border-color: var(--accents-4);
 }
 
 :root .dark {
@@ -22,16 +23,19 @@
    --secondary-text: var(--accents-3);
    --primary-bg: var(--accents-8);
    --paper-bg: var(--black);
+   --border-color: var(--accents-4);
 }
 
 :root .high-contrast {
    --primary-text: white;
    --primary-bg: #020a15;
    --paper-bg: var(--black);
+   --border-color: green;
 }
 
 :root .grayscale {
    --primary-text: var(--accents-8);
    --primary-bg: var(--accents-2);
    --paper-bg: var(--black);
+   --border-color: var(--accents-3);
 }

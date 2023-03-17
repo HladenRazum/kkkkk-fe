@@ -13,20 +13,17 @@ const ThemeSwitch: React.FC = () => {
    };
 
    return (
-      <label>
-         Choose a theme
-         <select
-            defaultValue={theme}
-            title="Theme switch"
-            name="Theme switch"
-            onChange={onChange}
-         >
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="high-contrast">High-contrast</option>
-            <option value="grayscale">Grayscale</option>
-         </select>
-      </label>
+      <select
+         defaultValue={theme}
+         title="Theme switch"
+         name="Theme switch"
+         onChange={onChange}
+      >
+         <option value="light">Light</option>
+         <option value="dark">Dark</option>
+         <option value="high-contrast">High-contrast</option>
+         <option value="grayscale">Grayscale</option>
+      </select>
    );
 };
 

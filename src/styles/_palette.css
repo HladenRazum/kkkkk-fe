@@ -1,0 +1,37 @@
+:root {
+   --white: #ffffff;
+   --black: #000000;
+   --accents-1: #fafafa;
+   --accents-2: #eaeaea;
+   --accents-3: #999;
+   --accents-4: #888;
+   --accents-5: #666;
+   --accents-6: #444;
+   --accents-7: #333;
+   --accents-8: #111;
+}
+
+:root .light {
+   --primary-text: var(--accents-8);
+   --primary-bg: var(--accents-1);
+   --paper-bg: var(--white);
+}
+
+:root .dark {
+   --primary-text: var(--white);
+   --secondary-text: var(--accents-3);
+   --primary-bg: var(--accents-8);
+   --paper-bg: var(--black);
+}
+
+:root .high-contrast {
+   --primary-text: white;
+   --primary-bg: #020a15;
+   --paper-bg: var(--black);
+}
+
+:root .grayscale {
+   --primary-text: var(--accents-8);
+   --primary-bg: var(--accents-2);
+   --paper-bg: var(--black);
+}

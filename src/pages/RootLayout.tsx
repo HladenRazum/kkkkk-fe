@@ -8,7 +8,9 @@ const RootLayout = () => {
    return (
       <>
          <NavBar />
-         <Outlet />
+         <div className="wrapped">
+            <Outlet />
+         </div>
       </>
    );
 };

@@ -1,0 +1,8 @@
+.nav-link-item {
+   margin-bottom: 1em;
+   color: inherit;
+
+   &.active {
+      color: rgb(162, 17, 246);
+   }
+}

@@ -1,13 +1,14 @@
-import ThemeSwitch from "../features/ThemeSwitch/ThemeSwitch";
+import NavLinks from "../atoms/NavLinks/NavLinks";
 import "./navbar.scss";
 
 const NavBar = () => {
    return (
-      <nav className="navbar bb pb-1">
-         <span>Logo</span>
-         <ul>Nav Links</ul>
-         <ThemeSwitch />
-      </nav>
+      <div className="bb">
+         <nav className="navbar">
+            <span>Logo</span>
+            <NavLinks />
+         </nav>
+      </div>
    );
 };
 

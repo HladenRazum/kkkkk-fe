@@ -17,3 +17,8 @@
 .pb-4 {
    padding-bottom: 2em;
 }
+
+.wrapped {
+   padding: 0 0.5em;
+   margin: auto;
+}

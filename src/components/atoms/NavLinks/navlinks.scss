@@ -1,0 +1,12 @@
+.nav-links {
+   padding: 0;
+   margin: 0;
+   display: none;
+   position: absolute;
+   top: 100px;
+   right: 0.5em;
+
+   &.active {
+      display: block;
+   }
+}

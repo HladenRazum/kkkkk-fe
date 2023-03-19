@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import ThemeSwitch from "../../features/ThemeSwitch/ThemeSwitch";
 import MenuBtn from "../MenuBtn/MenuBtn";
 import NavLinkItem from "./NavLinkItem/NavLinkItem";
 import "./navlinks.scss";
@@ -18,6 +19,9 @@ const NavLinks: React.FC = () => {
             <NavLinkItem to="/register" name="Register" />
             <NavLinkItem to="/login" name="Login" />
             <NavLinkItem to="/my-profile" name="My Profile" />
+            <li>
+               <ThemeSwitch />
+            </li>
          </ul>
       </>
    );

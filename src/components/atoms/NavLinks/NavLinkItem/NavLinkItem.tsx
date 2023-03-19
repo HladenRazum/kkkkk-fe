@@ -7,10 +7,8 @@ type NavLinkProps = {
 };
 
 const NavLinkItem: React.FC<NavLinkProps> = ({ name, to }) => (
-   <li>
-      <NavLink className="nav-link-item" to={to}>
-         {name}
-      </NavLink>
+   <li className="nav-link-item">
+      <NavLink to={to}>{name}</NavLink>
    </li>
 );
 

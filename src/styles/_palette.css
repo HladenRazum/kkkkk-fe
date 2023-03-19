@@ -16,6 +16,8 @@
    --primary-bg: var(--accents-1);
    --paper-bg: var(--white);
    --border-color: #cacaca;
+   --input-text: var(--black);
+   --input-bg: var(--accents-2);
 }
 
 :root .dark {
@@ -24,6 +26,8 @@
    --primary-bg: var(--accents-8);
    --paper-bg: var(--black);
    --border-color: var(--accents-6);
+   --input-text: white;
+   --input-bg: #212121;
 }
 
 :root .high-contrast {
@@ -31,11 +35,15 @@
    --primary-bg: #020a15;
    --paper-bg: var(--black);
    --border-color: #132b4c;
+   --input-text: white;
+   --input-bg: #0f0055;
 }
 
 :root .grayscale {
    --primary-text: var(--accents-8);
    --primary-bg: var(--accents-2);
    --paper-bg: var(--black);
+   --input-text: var(--black);
    --border-color: #bdb7b7;
+   --input-bg: var(--accents-1);
 }

@@ -1,0 +1,18 @@
+.input-wrapper {
+   position: relative;
+
+   label {
+      position: absolute;
+      top: 5%;
+      left: 3%;
+      font-size: 12px;
+      color: #b7bab8;
+   }
+
+   input {
+      font-size: 18px;
+      font-weight: 400;
+   }
+
+   margin-bottom: 1em;
+}

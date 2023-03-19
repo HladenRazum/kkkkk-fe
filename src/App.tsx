@@ -7,7 +7,7 @@ import {
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import MyProfile from "./pages/MyProfile";
-import Register from "./pages/Register";
+import Register from "./pages/Register/Register";
 import RootLayout from "./pages/RootLayout";
 
 const router = createBrowserRouter(

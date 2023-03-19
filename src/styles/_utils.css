@@ -18,7 +18,15 @@
    padding-bottom: 2em;
 }
 
+.mb {
+   margin-bottom: 1em;
+}
+
+.mb-0 {
+   margin-bottom: 0;
+}
+
 .wrapped {
-   padding: 0 0.5em;
+   padding: 0 0.7em;
    margin: auto;
 }

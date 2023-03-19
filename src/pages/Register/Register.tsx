@@ -1,12 +1,21 @@
+import { FormEvent } from "react";
+import Button from "../../components/atoms/Button/Button";
 import Input from "../../components/atoms/Input/Input";
 
 const Register: React.FC = () => {
+   const register = (e: FormEvent) => {
+      e.preventDefault();
+
+      console.log("Register me");
+   };
+
    return (
       <main>
          <h1>Sign Up</h1>
-         <form action="">
+         <form onSubmit={register}>
             <Input type="text" label="Username" name="username" />
             <Input type="password" label="Password" name="password" />
+            <Button type="submit" text="Register" />
          </form>
       </main>
    );

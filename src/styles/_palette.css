@@ -9,6 +9,9 @@
    --accents-6: #444;
    --accents-7: #333;
    --accents-8: #111;
+
+   --success: #008b10;
+   --error: #c60505;
 }
 
 :root .light {
@@ -18,6 +21,9 @@
    --border-color: #cacaca;
    --input-text: var(--black);
    --input-bg: var(--accents-2);
+   --accent-color: red;
+   --button-bg: #0115b1;
+   --button-text: var(--white);
 }
 
 :root .dark {
@@ -28,6 +34,9 @@
    --border-color: var(--accents-6);
    --input-text: white;
    --input-bg: #212121;
+   --accent-color: red;
+   --button-bg: #2a0e6e;
+   --button-text: #d5c4ff;
 }
 
 :root .high-contrast {
@@ -37,13 +46,19 @@
    --border-color: #132b4c;
    --input-text: white;
    --input-bg: #0f0055;
+   --button-bg: #9aae00;
+   --accent-color: red;
+   --button-text: #d5c4ff;
 }
 
 :root .grayscale {
    --primary-text: var(--accents-8);
    --primary-bg: var(--accents-2);
-   --paper-bg: var(--black);
+   --paper-bg: var(--accents-1);
    --input-text: var(--black);
    --border-color: #bdb7b7;
    --input-bg: var(--accents-1);
+   --button-bg: var(--black);
+   --button-text: var(--white);
+   --accent-color: red;
 }

@@ -4,11 +4,14 @@ import "./input.scss";
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
    name: string;
    label: string;
+   className?: string;
 }
 
-const Input: React.FC<InputProps> = ({ name, label, ...rest }) => {
+const Input: React.FC<InputProps> = ({ name, label, className, ...rest }) => {
+   const classes = className ? `input-wrapper ${className}` : "input-wrapper";
+
    return (
-      <div className="input-wrapper">
+      <div className={classes}>
          <label htmlFor={name}>{label}</label>
          <input type="test" id={name} {...rest} />
       </div>

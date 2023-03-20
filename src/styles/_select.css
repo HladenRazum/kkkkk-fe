@@ -1,0 +1,7 @@
+select {
+   height: 38px;
+   background-color: var(--primary-bg);
+   color: var(--primary-text);
+   border-radius: 5px;
+   padding: 4px;
+}

@@ -12,6 +12,8 @@
 
    --success: #008b10;
    --error: #c60505;
+
+   --dark-orange: #be9d5a;
 }
 
 :root .light {
@@ -23,6 +25,7 @@
    --input-bg: var(--accents-2);
    --accent-color: red;
    --button-bg: #0115b1;
+   --button-hover-bg: red;
    --button-text: var(--white);
 }
 
@@ -36,6 +39,7 @@
    --input-bg: #212121;
    --accent-color: red;
    --button-bg: #2a0e6e;
+   --button-hover-bg: red;
    --button-text: #d5c4ff;
 }
 
@@ -46,9 +50,10 @@
    --border-color: #132b4c;
    --input-text: white;
    --input-bg: #0f0055;
-   --button-bg: #9aae00;
+   --button-bg: #e35b2a;
+   --button-hover-bg: red;
    --accent-color: red;
-   --button-text: #d5c4ff;
+   --button-text: white;
 }
 
 :root .grayscale {
@@ -59,6 +64,7 @@
    --border-color: #bdb7b7;
    --input-bg: var(--accents-1);
    --button-bg: var(--black);
+   --button-hover-bg: red;
    --button-text: var(--white);
    --accent-color: red;
 }

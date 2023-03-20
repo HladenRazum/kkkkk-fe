@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../components/layout/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import useTheme from "../hooks/useTheme";
 
@@ -11,6 +12,7 @@ const RootLayout = () => {
          <div className="wrapped">
             <Outlet />
          </div>
+         <Footer />
       </>
    );
 };

@@ -1,0 +1,18 @@
+details {
+   color: #757575;
+   font-size: 14px;
+   margin-bottom: 1em;
+}
+
+summary > * {
+   display: inline;
+}
+
+summary {
+   margin-bottom: 1em;
+   color: var(--primary-text);
+   font-size: 16px;
+}
+
+/* details[open] summary {
+} */

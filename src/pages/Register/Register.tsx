@@ -14,7 +14,12 @@ const Register: React.FC = () => {
          <h1>Sign Up</h1>
          <form onSubmit={register}>
             <Input type="text" label="Username" name="username" />
-            <Input type="password" label="Password" name="password" />
+            <Input
+               type="password"
+               label="Password"
+               name="password"
+               className="mb-4"
+            />
             <Button type="submit" text="Register" />
          </form>
       </main>

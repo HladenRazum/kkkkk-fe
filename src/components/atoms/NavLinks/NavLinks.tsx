@@ -15,13 +15,7 @@ const NavLinks: React.FC = () => {
       <>
          <MenuBtn onClick={toggleMenu} />
          <ul ref={linksRef} className="nav-links">
-            <NavLinkItem to="/" name="Home" />
-            <NavLinkItem to="/register" name="Register" />
-            <NavLinkItem to="/login" name="Login" />
-            <NavLinkItem to="/my-profile" name="My Profile" />
-            <li>
-               <ThemeSwitch />
-            </li>
+            <ThemeSwitch />
          </ul>
       </>
    );

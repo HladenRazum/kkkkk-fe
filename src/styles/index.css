@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 @import url("./_details.css");
+@import url("./_error-message.css");
 @import url("./_form.css");
 @import url("./_input.css");
 @import url("./_palette.css");

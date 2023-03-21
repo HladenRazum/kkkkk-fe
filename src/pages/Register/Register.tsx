@@ -2,18 +2,21 @@ import { ErrorMessage, Field, Form, Formik, FormikHelpers } from "formik";
 import signupSchema, { SignupFormData } from "./validation.schema";
 import Button from "../../components/atoms/Button/Button";
 import "../../components/atoms/Input/input.scss";
+import api from "../../api";
 
 const initialValues: SignupFormData = {
-   username: "",
-   password: "",
+   email: "22@abv.bg",
+   username: "22",
+   password: "22",
 };
 
 const Register: React.FC = () => {
-   const register = (
+   const register = async (
       values: SignupFormData,
       actions: FormikHelpers<SignupFormData>
    ) => {
-      console.log(values);
+      const user = { ...values };
+      await api.USER.REGISTER(user);
    };
 
    return (
@@ -26,6 +29,15 @@ const Register: React.FC = () => {
          >
             {() => (
                <Form>
+                  <div className="input-wrapper">
+                     <label htmlFor="email">Email</label>
+                     <Field id="email" name="email" type="text" />
+                     <ErrorMessage
+                        component="div"
+                        name="email"
+                        className="error-message"
+                     />
+                  </div>
                   <div className="input-wrapper">
                      <label htmlFor="username">Username</label>
                      <Field id="username" name="username" type="text" />

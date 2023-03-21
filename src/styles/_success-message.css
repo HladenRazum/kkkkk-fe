@@ -1,0 +1,4 @@
+.success-message {
+   color: green;
+   font-size: var(--text-sm);
+}

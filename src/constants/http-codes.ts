@@ -1,0 +1,6 @@
+const HTTP_CODES = {
+   UNPROCESSABLE_ENTITY: 422,
+   NOT_FOUND: 404,
+};
+
+export default HTTP_CODES;

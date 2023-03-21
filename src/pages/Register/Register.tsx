@@ -3,20 +3,38 @@ import signupSchema, { SignupFormData } from "./validation.schema";
 import Button from "../../components/atoms/Button/Button";
 import "../../components/atoms/Input/input.scss";
 import api from "../../api";
+import HTTP_CODES from "../../constants/http-codes";
+import { useState } from "react";
 
 const initialValues: SignupFormData = {
-   email: "22@abv.bg",
-   username: "22",
-   password: "22",
+   email: "",
+   username: "",
+   password: "",
 };
 
 const Register: React.FC = () => {
+   const [serverError, setServerError] = useState<string | null>(null);
+   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
    const register = async (
       values: SignupFormData,
       actions: FormikHelpers<SignupFormData>
    ) => {
+      setSuccessMessage(null);
+      setServerError(null);
+
       const user = { ...values };
-      await api.USER.REGISTER(user);
+
+      const response = await api.USER.REGISTER(user);
+
+      if (!response.user) {
+         if (response.statusCode === HTTP_CODES.UNPROCESSABLE_ENTITY) {
+            setServerError(response.message);
+         }
+      } else {
+         setSuccessMessage("Successfully registered.");
+         console.log({ user });
+      }
    };
 
    return (
@@ -57,6 +75,12 @@ const Register: React.FC = () => {
                      />
                   </div>
                   <Button type="submit" text="Register" className="mt-3" />
+                  {serverError && (
+                     <div className="error-message">{serverError}</div>
+                  )}
+                  {successMessage && (
+                     <div className="success-message">{successMessage}</div>
+                  )}
                </Form>
             )}
          </Formik>
